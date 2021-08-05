@@ -1,0 +1,148 @@
+{
+  "results":[
+    {
+      "title":"メニュー",
+      "side_menu":[
+        {
+          "title":"Goal 01",
+          "URL":"Goal01"
+        },
+        {
+          "title":"Goal 02",
+          "URL":"Goal02"
+        },
+        {
+          "title":"Goal 03",
+          "URL":"Goal03"
+        },
+        {
+          "title":"Goal 04",
+          "URL":"Goal04"
+        },
+        {
+          "title":"Goal 05",
+          "URL":"Goal05"
+        },
+        {
+          "title":"Goal 06",
+          "URL":"Goal06"
+        },
+        {
+          "title":"Goal 07",
+          "URL":"Goal07"
+        },
+        {
+          "title":"Goal 08",
+          "URL":"Goal08"
+        },
+        {
+          "title":"Goal 09",
+          "URL":"Goal09"
+        },
+        {
+          "title":"Goal 10",
+          "URL":"Goal10"
+        },
+        {
+          "title":"Goal 11",
+          "URL":"Goal11"
+        },
+        {
+          "title":"Goal 12",
+          "URL":"Goal12"
+        },
+        {
+          "title":"Goal 13",
+          "URL":"Goal13"
+        },
+        {
+          "title":"Goal 14",
+          "URL":"Goal14"
+        },
+        {
+          "title":"Goal 15",
+          "URL":"Goal15"
+        },
+        {
+          "title":"Goal 16",
+          "URL":"Goal16"
+        },
+        {
+          "title":"Goal 17",
+          "URL":"Goal17"
+        }
+      ]
+    },
+    {
+      "title":"カテゴリー",
+      "category":[
+        {
+          "title":"大　陸"
+        },
+        {
+          "title":"歴　史"
+        },
+        {
+          "title":"社　会"
+        },
+        {
+          "title":"政　治"
+        },
+        {
+          "title":"経　済"
+        },
+        {
+          "title":"国　際"
+        },
+        {
+          "title":"スポーツ"
+        },
+        {
+          "title":"オピニオン"
+        },
+        {
+          "title":"文　化"
+        },
+        {
+          "title":"宗　教"
+        },
+        {
+          "title":"芸　能"
+        },
+        {
+          "title":"アニメ"
+        },
+        {
+          "title":"教　育"
+        },
+        {
+          "title":"子育て"
+        },
+        {
+          "title":"医　療"
+        },
+        {
+          "title":"健　康"
+        },
+        {
+          "title":"地　域"
+        },
+        {
+          "title":"ライフ"
+        },
+        {
+          "title":"グルメ"
+        },
+        {
+          "title":"ファッション"
+        }
+      ]
+    },
+    {
+      "title":"６月 26日〜30日：イベント情報"
+    },
+    {
+      "title":"広告枠紹介"
+    }
+  ]
+}
