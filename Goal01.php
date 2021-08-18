@@ -1,20 +1,28 @@
 <?php include("./config/site_infomation.php"); ?>
 <?php include("./config/site_DOCTYPEhtml.php"); ?>
+<?php include("./class/SDGs.php"); ?>
 <?php displaySDGsHeader($site_title); ?>
-<div id="inner">
 
 <?php
-$SDGs_page_nav_list = [
-  [
-      "title" => "TOP",
-      "URL" => "./",
-  ],
-  [
-      "title" => "Goal01",
-      "URL" => "./Goal01",
-  ],
-]
+
+$video_file_name = "Goal01_video_list";
+
 ?>
+
+<div id="inner">
+
+  <?php
+  $SDGs_page_nav_list = [
+    [
+        "title" => "TOP",
+        "URL" => "./",
+    ],
+    [
+        "title" => "Goal01",
+        "URL" => "./Goal01",
+    ],
+  ]
+  ?>
 
     <section id="side_menu">
       <h1><?php echo $SDGs_side_menu_main_title; ?></h1>
@@ -73,6 +81,8 @@ $SDGs_page_nav_list = [
       ?>
     </main>
 
+<?php include("./commons/sdgs_video_list.php"); ?>
+
   <section style="border-top: ridge rgba(0, 0, 155, .6);border-bottom: ridge rgba(0, 0, 155, .6);">
   <?php
   $ad_count = 0;
@@ -86,6 +96,93 @@ $SDGs_page_nav_list = [
 
   ?>
 </section>
+
+
+<?php
+
+$SDGs_member_video_list_data = getApiDataCurl("http://sunstripe.main.jp/SDGs/api/YuMeMiGaChiram_video_list.json");
+$SDGs_member_video_list = getResult($SDGs_member_video_list_data);
+
+?>
+
+<section id="member_video_list" style="border-top: ridge rgba(0, 0, 155, .6);border-bottom: ridge rgba(0, 0, 155, .6);">
+  <h3>おすすめ</h3>
+  <?php
+  $ad_count = 0;
+  foreach ($SDGs_member_video_list as $video_no => $video_item) {
+    $SDGs_Goals = $video_item["Goals"];
+    $key = in_array("Goal01", $SDGs_Goals);
+    if ($key == false) {
+      continue;
+    }
+
+    $video_sub_title = $video_item["sub_title"];
+    $video_title = $video_item["title"];
+    $youtube_video_id = $video_item["youtube_video_id"];
+    $video_live_date = $video_item["live_date"];
+?>
+<section class="youtube_video">
+<h4><?php echo $video_sub_title; ?></h4>
+<h2><?php echo $video_title; ?></h2>
+
+<aside style="overflow:scroll;">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $youtube_video_id; ?>"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</aside>
+
+<?php
+foreach ($SDGs_Goals as $Goals_num => $Goals_item) {
+
+  $SDGs_link = $Goals_item;
+  if ($Goals_item == "SDGsGoals") {
+    $SDGs_link = "./";
+  }
+?>
+<?php
+if ($Goals_num == 0) { ?>
+<h3>
+  <a href="<?php echo $SDGs_link; ?>"><img src="./images/<?php echo $Goals_item; ?>@290x290.png" style="width:200px;"></a>
+</h3>
+<?php }
+if ($Goals_num != 0 && $Goals_num < count($SDGs_Goals)) { ?>
+  <a href="<?php echo $SDGs_link; ?>"><img src="./images/<?php echo $Goals_item; ?>@290x290.png" style="width:55px;"></a>
+<?php }
+}
+?>
+
+
+<h6><?php echo $video_live_date; ?></h6>
+
+</section>
+
+<?php
+    $ad_count++;
+    if ($ad_count % 3 == 0) {
+      include("../commons/ad.php");
+    }
+  }
+
+  ?>
+</section>
+<style>
+#member_video_list {
+  text-align: center;
+}
+
+.youtube_video {
+
+}
+.youtube_video iframe {
+    text-align: center;
+}
+.youtube_video aside {
+  margin:auto;
+}
+</style>
+
+
+
+
 
   <section id="footer_menu">
     <?php displaySDGsNav(); ?>

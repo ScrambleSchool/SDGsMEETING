@@ -60,6 +60,13 @@ h2 {
   width: 100%;
 }
 
+
+.main_description {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
 #footer_menu {
 
 }
@@ -122,6 +129,8 @@ h2 {
   width: calc(100% - 80px - 6px);
   vertical-align: middle;
 }
+
+
 
 /* 横幅1000px以上 */
 @media screen and (min-width: 1000px) {
