@@ -57,7 +57,7 @@ $video_file_name = "Goal05_video_list";
       <h1>
         5. ジェンダー平等を実現しよう
       </h1>
-      <p>
+      <p class="main_description">
         ジェンダー平等を達成し、全ての女性及び女児のエンパワーメントを行う。
       </p>
 

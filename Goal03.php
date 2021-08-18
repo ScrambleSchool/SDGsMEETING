@@ -57,7 +57,7 @@ $video_file_name = "Goal03_video_list";
       <h1>
         3. 全ての人に健康と福祉を
       </h1>
-      <p>
+      <p class="main_description">
         あらゆる年齢の全ての人々の健康的な生活を確保し、福祉を促進する。
       </p>
       <?php

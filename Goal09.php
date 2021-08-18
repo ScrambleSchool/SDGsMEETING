@@ -56,7 +56,7 @@ $video_file_name = "Goal09_video_list";
       <h1>
         9. 産業と技術革新の基盤をつくろう
       </h1>
-      <p>
+      <p class="main_description">
         強靭（レジリエント）なインフラ構築、包摂的かつ持続可能な産業化の促進及びイノベーションの推進を図る。
       </p>
 

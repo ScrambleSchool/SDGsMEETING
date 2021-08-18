@@ -57,7 +57,7 @@ $video_file_name = "Goal01_video_list";
       <h1>
         1. 貧困をなくそう
       </h1>
-      <p>
+      <p class="main_description">
         あらゆる場所、あらゆる形態の貧困を終わらせる。
       </p>
 

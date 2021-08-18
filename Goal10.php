@@ -56,7 +56,7 @@ $video_file_name = "Goal10_video_list";
       <h1>
         10. 人や国の不平等をなくそう
       </h1>
-      <p>
+      <p class="main_description">
         国内及び各国家間の不平等を是正する。
       </p>
 

@@ -57,7 +57,7 @@ $video_file_name = "Goal06_video_list";
       <h1>
         6. 安全な水とトイレを世界中に
       </h1>
-      <p>
+      <p class="main_description">
         全ての人々の水と衛生の利用可能性と、持続可能な管理を確保する。
       </p>
 

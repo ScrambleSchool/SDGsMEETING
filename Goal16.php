@@ -56,7 +56,7 @@ $video_file_name = "Goal16_video_list";
       <h1>
         16. 平和と公正をすべての人に
       </h1>
-      <p>
+      <p class="main_description">
         持続可能な開発のための平和で包摂的な社会を促進し、すべての人々に司法へのアクセスを提供し、あらゆるレベルにおいて効果的で説明責任のある包摂的な制度を構築する。
       </p>
       <section style="overflow:scroll;">

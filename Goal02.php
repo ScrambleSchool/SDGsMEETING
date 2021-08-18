@@ -57,7 +57,7 @@ $video_file_name = "Goal02_video_list";
       <h1>
         2. 飢餓をゼロに
       </h1>
-      <p>
+      <p class="main_description">
         飢餓を終わらせ、食料安全保障及び栄養の改善を実現し、持続可能な農業を促進する。
       </p>
 

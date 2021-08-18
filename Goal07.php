@@ -57,7 +57,7 @@ $video_file_name = "Goal07_video_list";
       <h1>
         7. エネルギーをみんなにそしてクリーンに
       </h1>
-      <p>
+      <p class="main_description">
         全ての人々の、安価かつ信頼できる持続可能な近代的なエネルギーへのアクセスを確保する。
       </p>
 

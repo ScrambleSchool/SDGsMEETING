@@ -56,7 +56,7 @@ $video_file_name = "Goal14_video_list";
       <h1>
         14. 海の豊かさを守ろう
       </h1>
-      <p>
+      <p class="main_description">
         持続可能な開発のために、海洋・海洋資源を保全し、持続可能な形で利用する。
       </p>
 

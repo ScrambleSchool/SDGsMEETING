@@ -56,7 +56,7 @@ $video_file_name = "Goal13_video_list";
       <h1>
         13. 気候変動に具体的な対策を
       </h1>
-      <p>
+      <p class="main_description">
         気候変動及びその影響を軽減するための緊急対策を講じる。
       </p>
 

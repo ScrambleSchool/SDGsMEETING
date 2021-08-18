@@ -56,7 +56,7 @@ $video_file_name = "Goal12_video_list";
       <h1>
         12. つくる責任つかう責任
       </h1>
-      <p>
+      <p class="main_description">
         持続可能な消費生産形態を確保する。
       </p>
 

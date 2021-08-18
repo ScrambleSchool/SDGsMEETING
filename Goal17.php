@@ -56,7 +56,7 @@ $video_file_name = "Goal17_video_list";
       <h1>
         17. パートナーシップで目標を達成しよう
       </h1>
-      <p>
+      <p class="main_description">
         持続可能な開発のための実施手段を強化し、グローバル・パートナーシップを活性化する。
       </p>
 

@@ -56,7 +56,7 @@ $video_file_name = "Goal11_video_list";
       <h1>
         11. 住み続けられるまちづくりを
       </h1>
-      <p>
+      <p class="main_description">
         包摂的で安全かつ強靭（レジリエント）で持続可能な都市及び人間居住を実現する。
       </p>
 

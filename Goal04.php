@@ -57,7 +57,7 @@ $video_file_name = "Goal04_video_list";
       <h1>
         4. 質の高い教育をみんなに
       </h1>
-      <p>
+      <p class="main_description">
         全ての人に包摂的かつ公正な質の高い教育を確保し、生涯学習の機会を促進する。
       </p>
 
