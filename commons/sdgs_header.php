@@ -41,11 +41,12 @@
   $extension = $filepath['extension'];
   $filename = end($REQUEST_PATHS);
   if ($filename) {
-    $filename = $filename.".".($extension?$extension:"php");
+    if(strpos($filename,'.php') === false){
+      $filename = $filename.".".($extension?$extension:"php");
+    }
   } else {
     $filename = "index.php";
   }
-  // echo "<h5>filename : ".$filename."</h5>";
 
   $timeStamp = filemtime($filename);
   // 日時整形後、出力
