@@ -64,20 +64,8 @@ $video_file_name = "Goal08_video_list";
       <?php
       $Goal_key = "Goal08";
       $targets_thema_list = targetsSDG();
-      if (is_array($targets_thema_list[$Goal_key])) {
-        foreach ($targets_thema_list[$Goal_key] as $key => $targets_thema_item) {
-          if ($key == "title") {
-            echo '<h2>'.$targets_thema_item.'</h2>';
-          }
-          if ($key == "items") {
-            echo '<article id="target_item_description">';
-            foreach ($targets_thema_item as $target_num => $target_item) {
-              echo '<section class="target_item_description">'.$target_item["description"].'</section>';
-            }
-            echo '</article>';
-          }
-        }
-      }
+      $SDGs = new SDGs();
+      $SDGs-> displaySDGsTarget($targets_thema_list,$Goal_key);
       ?>
     </main>
 
